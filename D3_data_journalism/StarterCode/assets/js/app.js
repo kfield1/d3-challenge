@@ -13,7 +13,7 @@ var svg = d3.select("#plot")
           "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("/data.csv").then(d => {
+d3.csv("data.csv").then(d => {
 
   // Add X axis
   var x = d3.scaleLinear()
